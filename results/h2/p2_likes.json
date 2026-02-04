@@ -3,10 +3,11 @@
   "population": "Sparse users",
   "subsample": "ur0.01_ip0.01 (10% user subsample)",
   "positive_definition": "like OR share OR bookmark",
+  "feedback_type": "explicit",
   "metric": "NDCG@10",
-  "cf_ndcg": 0.00000,
-  "hybrid_ndcg": 0.00000,
-  "delta_ndcg": 0.00000,
-  "conclusion": "Metrics are zero for both models due to extreme sparsity; no benefit from content features observed."
+  "cf_ndcg": 0.0,
+  "hybrid_ndcg": 0.0,
+  "delta_ndcg": 0.0,
+  "note": "Both models yield zero NDCG due to extreme sparsity of explicit feedback.",
+  "conclusion": "No measurable benefit from content features; ranking metrics become uninformative under extreme sparsity."
 }
-
