@@ -1,1 +1,12 @@
+{
+  "hypothesis": "H2",
+  "population": "Sparse users",
+  "subsample": "ur0.01_ip0.01 (10% user subsample)",
+  "positive_definition": "like OR share OR bookmark",
+  "metric": "NDCG@10",
+  "cf_ndcg": 0.00000,
+  "hybrid_ndcg": 0.00000,
+  "delta_ndcg": 0.00000,
+  "conclusion": "Metrics are zero for both models due to extreme sparsity; no benefit from content features observed."
+}
 
