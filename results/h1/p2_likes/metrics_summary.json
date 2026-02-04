@@ -1,1 +1,13 @@
+{
+  "hypothesis": "H1",
+  "population": "Active users",
+  "positive_definition": "like OR share OR bookmark",
+  "metric": "NDCG@10",
+  "num_seeds": 3,
+  "cf_mean": 0.00257,
+  "hybrid_mean": 0.00047,
+  "delta_mean": -0.00210,
+  "delta_std": 0.00068,
+  "conclusion": "Hybrid model significantly underperforms CF baseline for active users under explicit feedback."
+}
 
