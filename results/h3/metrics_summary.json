@@ -1,0 +1,31 @@
+{
+  "hypothesis": "H3: Content embeddings improve recommendation quality for cold-start items",
+  "slice": "up0.01_ir0.01 (10% subsample)",
+  "cold_item_definition": "items with <= 1 interaction in training",
+  "n_seeds": 5,
+  "n_items_total": 71071,
+  "n_cold_items": 22958,
+  "metrics": {
+    "ndcg_cf": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "ndcg_hybrid": {
+      "mean": 0.000978,
+      "std": 0.00139
+    },
+    "delta_ndcg": {
+      "mean": 0.000978,
+      "std": 0.00139
+    }
+  },
+  "interpretation": {
+    "result": "partially confirmed",
+    "details": [
+      "CF-only models completely fail on cold-start items (NDCG@10 = 0 for all seeds).",
+      "Hybrid models occasionally achieve non-zero ranking quality.",
+      "The effect of content embeddings is unstable across random seeds.",
+      "Cold-start recommendation remains a high-variance problem under extreme sparsity."
+    ]
+  }
+}
